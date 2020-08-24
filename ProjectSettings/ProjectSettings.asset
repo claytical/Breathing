@@ -480,6 +480,7 @@ PlayerSettings:
   ps4UseResolutionFallback: 0
   ps4ReprojectionSupport: 0
   ps4UseAudio3dBackend: 0
+  ps4UseLowGarlicFragmentationMode: 1
   ps4SocialScreenEnabled: 0
   ps4ScriptOptimizationLevel: 2
   ps4Audio3dVirtualSpeakerCount: 14
@@ -584,12 +585,15 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   XboxOneXTitleMemory: 8
   XboxOneOverrideIdentityName: 
+  XboxOneOverrideIdentityPublisher: 
   vrEditorSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 1
     Collab: 1
+    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -604,7 +608,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: ced9a03d-c486-4ef5-bdc2-ae39eef9d62a
   framebufferDepthMemorylessMode: 0
-  projectName: Breathing (1)
+  projectName: Breathing
   organizationId: claytical
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
