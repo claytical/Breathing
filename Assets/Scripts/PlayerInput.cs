@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -15,10 +16,14 @@ public class PlayerInput : MonoBehaviour
     private int currentIndex = 0;
     private bool exhaling = false;
 
+    private int score = 0;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -41,7 +46,6 @@ public class PlayerInput : MonoBehaviour
         {
             Exhale();
         }
-
     }
 
     public void Inhale()
@@ -87,6 +91,7 @@ public class PlayerInput : MonoBehaviour
             exhaling = false;
             breathCaptured = 0;
             currentIndex++;
+            score++;
 
             if (currentIndex > hurdleTarget.Length)
             {
@@ -94,6 +99,11 @@ public class PlayerInput : MonoBehaviour
                 currentIndex = 0;
             }
         }
+    }
+
+    public float getBreathsCaptured()
+    {
+        return breathCaptured;
     }
 
 }
